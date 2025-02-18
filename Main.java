@@ -59,9 +59,10 @@ public class Main {
                 } else if (isBoolean(character) || isWrongFormat(expressionList.get(i))) {
                     isValid = false;
                 }
-
             }
-
+            if (!isValid) {
+                invalidCount++;
+            }
             // Pop all remaining operator from the stack
             if (!sl.isEmpty()) {
                 strings.append(sl.pop());
@@ -75,8 +76,8 @@ public class Main {
                 System.out.println("Invalid expression.");
             }
             System.out.println();
-
         }
+        validCount -= invalidCount;
         System.out.println("There are " + lineCount + " expressions in total");
         System.out.println("Valid expression: " + validCount);
         System.out.println("Invalid expression: " + invalidCount);
