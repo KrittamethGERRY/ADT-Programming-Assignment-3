@@ -3,10 +3,11 @@ Krittameth Tansuwan
 Student ID: 672115002
 
 # About this program  
-This program reads [.txt] or [.csv] file type and convert the infix expression into postfix expression.  
+This program reads [.txt] or [.csv] file type, converts the infix expression into a postfix expression  
+, display the valid and the invalid expression, and display how many valid/invalid expression inside the text file  
 
 # How to use  
-1. Open terminal in java file's directory.
+1. Open the terminal in the java file's directory.
 2. Enter **javac Main.java** in terminal.
 3. Enter **java Main.java [.TXT or .CSV file's directory]** to run the java code
   
